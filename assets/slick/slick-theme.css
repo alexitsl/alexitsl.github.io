@@ -1,9 +1,5 @@
 @charset 'UTF-8';
-/* Slider */
-.slick-loading .slick-list
-{
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
-}
+
 
 /* Icons */
 @font-face
@@ -112,6 +108,35 @@
 {
     content: '←';
 }
+
+@media (max-width:650px) {
+	.slick-prev:before,
+	.slick-next:before
+	{
+		font-size: 20px;
+	}
+	
+	.slick-prev
+	{
+		left: -30px;
+	}
+	[dir='rtl'] .slick-prev
+	{
+		right: -30px;
+		left: auto;
+	}
+
+	.slick-next
+	{
+		right: -30px;
+	}
+	[dir='rtl'] .slick-next
+	{
+		right: auto;
+		left: -30px;
+	}
+}
+
 
 /* Dots */
 .slick-dotted.slick-slider
